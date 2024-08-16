@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Financial Literacy Nepal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+       background: linear-gradient(135deg, rgb(12, 100, 27), rgb(57, 91, 206));
+        }
+
+        header {
+            background-color: #7de4ca;
+            padding: 5px 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+
+        header img {
+            height: 200px;
+            padding: 0px 20px;
+        }
+
+        
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1250px;
+    margin: 150px auto;
+    padding: 20px;
+    gap: 20px;
+}
+.card-list .card-item {
+    background: #fff;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+}
+.card-list .card-item:hover {
+    border: 2px solid #000;
+}
+.card-list .card-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.card-list span {
+    display: inline-block;
+    background: #F7DFF5;
+    margin-top: 32px;
+    padding: 8px 15px;
+    font-size: 0.75rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.card-list .developer {
+    background-color: #F7DFF5; 
+    color: #B22485;
+}   
+.card-list .designer {
+    background-color: #d1e8ff;
+    color: #2968a8;
+}
+.card-list .editor {
+    background-color: #d6f8d6; 
+    color: #205c20;
+}
+.card-item h3 {
+    color: #000;
+    font-size: 1.438rem;
+    margin-top: 28px;
+    font-weight: 600;
+}
+.card-item .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-35deg);
+    height: 40px;
+    width: 40px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-top: 40px;
+    transition: 0.2s ease;
+}
+.card-list .card-item:hover .arrow  {
+    background: #000;
+    color: #fff; 
+}
+@media (max-width: 1200px) {
+    .card-list .card-item {
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .card-list {
+        margin: 0 auto;
+    }
+}
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-color: #f5f5f5;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .hero p {
+            margin: 20px 0 0;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        /*footer*/
+        
+.footer{
+	background-color: rgb(38, 97, 68);
+    padding: 70px 0;
+}
+.footer .footer-container{
+    
+        max-width: 1170px;
+   
+        margin:auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer-col{
+   width: 300px;
+   padding: 10px 45px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}/*responsive*/
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+
+
+    </style>
+</head>
+
+<body>
+   
+
+
+
+   
+
+
+
+     <header>
+        
+        <div class="logo">
+            <img src="newlogo.png" alt="Financial Literacy Nepal Logo">
+        </div>
+        <nav>
+            <a href="home.html">HOME</a>
+            
+            <a href="gallery.html">GALLERY</a>
+            <a href="event.html">EVENT</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header> 
+
+
+    <center><b>
+            <h1>Welcome to Artha Sanjal</h1>
+        </b></center> <br>
+    
+
+<!--card section-->
+        <div class="card-list">
+            <a href="budget.html" class="card-item">
+                <img src="/budgeting.png" alt="Card Image">
+                <span class="developer">Budgeting</span>
+                <h3>Plan. Budget. Prosper</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="saving.html" class="card-item">
+                <img src="/saving.png" alt="Card Image">
+                <span class="designer">SavingCalculator</span>
+                <h3>Saving Smarter, Not Harder</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="loan.html" class="card-item">
+                <img src="/loan.png" alt="Card Image">
+                <span class="designer">LoanCalculator</span>
+                <h3>Know Your Loan, Plan Your Future</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+</div>
+        
+       
+           
+         
+    
+<!--detail section-->
+    <div class="detail">
+
+    <div style="display: flex; justify-content: space-between; text-align: center;">
+        <div
+            style="border: 1px solid #ccc; border-radius: 8px; padding: 20px; width: 30%; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);">
+            <h1>OUR VISION</h1>
+            <p>  Social empowerment through financial awareness</p>
+        </div>
+        <div
+            style="border: 1px solid #ccc; border-radius: 8px; padding: 20px; width: 30%; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);">
+            <h1>Mission</h1>
+            <p>Working with the various stakeholders of financial markets in increasing financial literacy and access.</p>
+        </div>
+        <div
+            style="border: 1px solid #ccc; border-radius: 8px; padding: 20px; width: 30%; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);">
+            <h1>Objective</h1>
+            <p>To run various programs (trainings, interactions, conferences etc.) <br>
+                To conduct studies/researches and share the findings with the concerned authorities. <br>
+                To develop and share financial educational materials. </p>
+        </div>
+    </div>
+
+</div>
+
+<!--footer-->
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Contact </h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+
+
+</body>
+
+</html>
